@@ -1,0 +1,743 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+/* HEADER */
+
+nav {
+  position: absolute;
+  padding: 2% 5%;
+}
+
+#mobileNav {
+  background-color: #272a31;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.topnav {
+  display: none;
+}
+
+.menuOpen {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.MotoGp-Logo {
+  display: none;
+}
+
+.mobileList {
+  display: none;
+  list-style: none;
+  padding: 0%;
+}
+
+.mobileList a {
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: #ff5438;
+}
+
+.deskList {
+  display: none;
+}
+
+.MotoGp-Bikes {
+  display: none;
+}
+
+.about a {
+  color: black;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #ff4f38;
+}
+
+/* HEADLINE */
+.headline {
+  background-color: rgba(240, 248, 255, 0.8);
+  background-blend-mode: overlay;
+  margin: 0;
+  padding: 20% 0% 5% 0%;
+  background-image: url(./Images/background-home.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sharingWorld {
+  color: #ff5438;
+  font-weight: 400;
+  margin-bottom: 3%;
+}
+
+.mainTitle {
+  margin: 0;
+  font-weight: bolder;
+  line-height: 2rem;
+  font-size: 2.2rem;
+  color: #ff5438;
+  background-image: url(./images/textBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.detailMotoGp {
+  background-color: white;
+  color: #535353;
+  font-size: 0.85rem;
+  border: 0.3rem solid whitesmoke;
+  padding: 3%;
+  margin: 6% 0% 2% 0%;
+}
+
+.detailMotoGp p {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.date {
+  color: #585858;
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.location {
+  color: #535353;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ACTIVITIES */
+
+.activities {
+  background-image: url(./Images/background-activities.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.activitiesTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 0;
+}
+
+.dash {
+  background-color: #ff5438;
+  height: 2px;
+  width: 15%;
+  margin-bottom: 5%;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.8);
+  margin-bottom: 10px;
+  padding: 5px;
+  height: 125px;
+}
+
+.activity:hover {
+  filter: drop-shadow(4px 6px 8px black);
+}
+
+.activity .icon {
+  text-align: center;
+  margin: 0 15px;
+}
+
+.activity h5 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px;
+  color: #ff5438;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.activity p {
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: 0%;
+}
+
+.bookTickets {
+  background-color: #ff4f38;
+  color: #d3d3d3;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5% 50px;
+  border: 0.2rem solid #ff5438;
+  margin-top: 25px;
+  margin-bottom: -5px;
+}
+
+.topRiders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.riders {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  margin-bottom: 10%;
+}
+
+.riderImg {
+  max-width: 25%;
+  flex: 1;
+  background-image: url(./images/NicePng_checkers-png_8273622.png);
+  background-position-x: left;
+  background-position-y: top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.riderDetail {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.riderName {
+  margin: 2% 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.riderTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ff5438;
+  font-style: italic;
+}
+
+.line {
+  margin: 5% 1%;
+  background-color: #d3d3d3;
+  width: 7%;
+  height: 0.15rem;
+}
+
+.riderDescription {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.sponsor {
+  background-color: #535353;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsorTitle {
+  color: white;
+}
+
+.sponsorList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 5%;
+  padding-bottom: 10%;
+}
+
+.sponsorList img {
+  filter: grayscale(1);
+}
+
+.sponsors {
+  width: 30%;
+  margin-bottom: 5%;
+}
+
+footer {
+  padding: 3.5% 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.copyright {
+  color: #535353;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.lorem {
+  display: none;
+}
+
+.about {
+  margin: 0;
+  padding: 22% 5% 10% 5%;
+  background-image: url(./Images/background-home.jpg);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMotoGp {
+  text-align: center;
+  margin: 3% 0%;
+  line-height: 2rem;
+  font-size: 2rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #ff5438;
+  font-weight: bold;
+}
+
+.aboutDetail {
+  background-color: white;
+  color: #000;
+  font-size: 0.85rem;
+  border: 0.2rem solid whitesmoke;
+  padding: 3%;
+  margin: 5% 0% 2% 0%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.aboutDetailspan {
+  display: none;
+}
+
+.contact {
+  text-align: center;
+  width: 80%;
+  color: #535353;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.logoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoDivTitle {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 800;
+  margin: 7% 0%;
+}
+
+.logoDivDescription {
+  text-align: center;
+  width: 70%;
+  font-size: 0.8rem;
+}
+
+.logoDivBox {
+  border: 0.2rem solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 5% 0% 10% 0%;
+}
+
+#logo {
+  width: 80%;
+}
+
+.logoDivHr {
+  height: 0.1rem;
+  width: 100%;
+  background-color: #d3d3d3;
+  margin-bottom: 5%;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.historyDesc {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 8%;
+}
+
+.historyTwoYears {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.lastYear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 2% 0%;
+  background-color: rgba(255, 84, 56, 0.7);
+  background-blend-mode: overlay;
+  cursor: pointer;
+}
+
+.year22 {
+  background-image: url(./Images/TTcircuit.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.year21 {
+  background-image: url(./Images/TTcircuit.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.previousYear {
+  text-align: center;
+  color: #d3d3d3;
+  font-size: 2.2rem;
+  margin: 20% 0% 3% 0%;
+}
+
+.previousDetail {
+  color: #d3d3d3;
+  font-size: 1rem;
+  margin: 0% 0% 20% 0%;
+  padding: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    background-color: #272a31;
+    gap: 2%;
+  }
+
+  .topnavList {
+    width: fit-content;
+    margin: 0%;
+    padding: 1%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 20%;
+    margin-right: 15%;
+    margin-left: 3%;
+  }
+
+  .topnavList li {
+    font-size: 1.2rem;
+    color: #d3d3d3;
+    font-weight: 800;
+  }
+
+  .social {
+    padding: 1% 0;
+    max-height: 2rem;
+    max-width: 10rem;
+  }
+
+  .menuOpen {
+    display: none;
+  }
+
+  .MotoGp-Logo {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin-left: 60%;
+  }
+
+  nav {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+    width: 80%;
+    margin: 0;
+  }
+
+  .deskList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10%;
+    list-style: none;
+  }
+
+  .deskList a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .orangeBtn {
+    color: #ff5438;
+  }
+
+  .blackBtn {
+    color: #272a31;
+  }
+
+  .MotoGp-Bikes {
+    display: block;
+    border: 0.5rem solid #ff5438;
+    background-color: white;
+    color: #ff5438;
+    font-size: 1.2rem;
+    height: 5rem;
+    padding: 1% 25%;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+  }
+
+  .dash {
+    width: 5%;
+    margin-bottom: 3%;
+  }
+
+  .headline {
+    background-image: url(./Images/background-home.jpg);
+    padding-top: 10%;
+    padding-left: 15%;
+    padding-right: 25%;
+  }
+
+  .sharingWorld {
+    font-size: 4rem;
+  }
+
+  .mainTitle {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .aboutMotoGp p {
+    line-height: 2rem;
+  }
+
+  .date {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .location {
+    font-size: 1.5rem;
+  }
+
+  .activities .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+  }
+
+  .activity {
+    width: 18%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 250px;
+  }
+
+  .bookTickets {
+    font-size: 2rem;
+    text-decoration: underline;
+    background-color: unset;
+    border: none;
+    margin: 5% 0%;
+  }
+
+  .ridersHead {
+    font-size: 3rem;
+  }
+
+  .riderContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0 10%;
+    gap: 5%;
+    margin-bottom: 10%;
+  }
+
+  .riderName {
+    font-size: 2rem;
+  }
+
+  .riderTitle {
+    font-size: 1.4rem;
+  }
+
+  .riderDescription {
+    font-size: 1.2rem;
+  }
+
+  .aboutSponsor {
+    display: none;
+  }
+
+  .sponsorTitle {
+    font-size: 3rem;
+    color: #d3d3d3;
+  }
+
+  .sponsors {
+    width: 15%;
+  }
+
+  .sponsorList {
+    padding-bottom: 0;
+  }
+
+  .footerHead {
+    font-size: 4rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .rights {
+    display: none;
+  }
+
+  .lorem {
+    display: block;
+  }
+
+  .about {
+    background-image: url(./Images/background-home.jpg);
+    padding-top: 10%;
+  }
+
+  .aboutDesk {
+    display: none;
+  }
+
+  .aboutMotoGp {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 70%;
+    margin: 0;
+  }
+
+  .aboutDetail {
+    background-color: white;
+    font-size: 1.2rem;
+    width: 60%;
+    margin-top: 3%;
+  }
+
+  .aboutDetailspan {
+    display: block;
+  }
+
+  .contact {
+    font-size: 1.3rem;
+    width: 60%;
+  }
+
+  .logoDivTitle {
+    font-size: 2rem;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+  }
+
+  .logoDivDescription {
+    font-size: 1.1rem;
+    width: 55%;
+  }
+
+  .logoDivBox {
+    max-width: 40%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+  }
+
+  .historyDesc {
+    font-size: 1.1rem;
+    margin-bottom: 3%;
+  }
+
+  .historyTwoYears {
+    flex-direction: row;
+    width: 70%;
+    gap: 3%;
+  }
+
+  .aboutFooter {
+    background-color: #272a31;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .aboutCopyright {
+    color: #fff;
+  }
+}
